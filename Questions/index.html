@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Question practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <h1 class="main_heading">This is the list of the questins practiced by me for JS prepration.</h1>
+
+    <p class="question">1. Write a JavaScript program to display the current day and time in the following format.
+        Sample Output : Today is : Tuesday.
+        Current time is : 10 PM : 30 : 38.</p>
+    <div class="code-container">
+        <pre id="code-output">
+            
+            
+let now = new Date();//creating the date object.
+
+console.log(now);
+//SPECEFIC FUNCTIONS FOR DATE EXTRACTION.
+console.log("Year:", now.getFullYear());
+console.log("Month:", now.getMonth() + 1); // Month is 0-based
+console.log("Day:", now.getDate());
+console.log("Day of the week:", now.getDay());
+console.log("Hours:", now.getHours());
+console.log("Minutes:", now.getMinutes());
+console.log("Seconds:", now.getSeconds());
+console.log("Milliseconds:", now.getMilliseconds());
+
+//SPECEFIC FUNCTION TO SET DATE.
+
+// setFullYear(year, month, day)
+// setMonth(month, day)
+// setDate(day)
+// setHours(hours, minutes, seconds, milliseconds)
+// setMinutes(minutes, seconds, milliseconds)
+// setSeconds(seconds, milliseconds)
+// setMilliseconds(milliseconds)
+
+// TO GE THE TIMEZONE.
+console.log("Timezone offset:", now.getTimezoneOffset());
+            </pre>
+    </div>
+    <p class="question">2. Write a JavaScript program to print the current window contents.</p>
+<div class="code-container">
+    <pre id = "code-output">
+
+    </pre>
+</div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
